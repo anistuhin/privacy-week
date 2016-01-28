@@ -1,0 +1,149 @@
+/*
+Author: Md Anisur Rahman
+Author URI: http://anistuhin.com
+Github link: https://github.com/anistuhin/privacy-week
+*/
+
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+p {
+text-align: justify !important;
+}
+body {
+font-size: 14px;
+line-height: 1.5;
+font-family: "Open Sans", sans-serif;
+color: #333;
+background: #FFF none repeat scroll 0% 0%;
+}
+#tabzilla {
+z-index: 99999;
+}
+.stone #outer-wrapper {
+position: relative;
+border-top: 2px solid #FFF;
+background: #F9F9F9 url("../img/bg-stone.png") repeat-x scroll 0px 0px;
+}
+#mls-users-left, #mls-users-right {
+position: relative;
+width: 50%;
+float: left;
+}
+#mls-users-left {
+width: calc(50% - 20px);
+margin-right: 20px;
+margin-top: 5px;
+border: 10px solid rgba(85,91,91, .4);
+}
+.watermark {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 99;
+}
+#svg {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 9;
+}
+#canvas {
+width: 100%;
+}
+#palet, #photo {
+display: none !important;
+}
+#color-palet {
+position: relative;
+width: 215px;
+height: 270px;
+float: right;
+}
+#color-palet img {
+float: right;
+margin-top: 15px;
+cursor: url('../img/picker.ico'), default;
+}
+ul#palet-nav {
+position: relative;
+width: calc(100% - 215px);
+list-style: none;
+float: left;
+}
+ul#palet-nav li {
+position:relative;
+border-radius: 5px;
+width: calc(100% - 50px);
+margin: 5px 25px 10px;
+height: 50px;
+text-transform: uppercase;
+text-align: center;
+line-height: 46px;
+background-color: #1F93D0;
+color: rgba(255,255,255,1);
+font-size: 1.001rem;
+padding: 0;
+border: 0;
+display: block;
+}
+ul#palet-nav li:hover {
+color: rgba(255,255,255,.6);
+cursor: pointer;
+}
+ul#palet-nav li  a {
+color: white;
+}
+ul#palet-nav li a:hover {
+outline: none;
+border: none;
+text-decoration: none;
+color: rgba(255,255,255,.6);
+cursor: pointer;
+}
+ul#palet-nav li:last-child {
+border: 3px solid #1F93D0;
+background-color: #F9F9F9;
+cursor: default;
+display: none;
+}
+.share {
+width: 140px;
+position: relative;
+margin: 2px auto;
+}
+a.twitter, a.facebook, a.g-plus {
+float: left;
+width: 40px;
+height: 40px;
+display: block;
+text-indent: -9999px;
+margin-right: 10px;
+background: url('../img/social-sprite.png') no-repeat;
+opacity: 1;
+}
+a.twitter {
+background-position: 0px 0px;
+}
+a.facebook {
+background-position: -40px 0px;
+}
+a.g-plus {
+background-position: -80px 0px;
+margin-right: 0;
+}
+a.twitter:hover, a.facebook:hover, a.g-plus:hover {
+opacity: .8;
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 400px) {
+}
